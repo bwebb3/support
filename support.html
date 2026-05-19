@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Athlete MindBoost — Support</title>
+<meta name="description" content="Support and contact information for Athlete MindBoost." />
+<style>
+  :root {
+    --bg: #0f172a;
+    --panel: #111c34;
+    --panel-2: #16223e;
+    --text: #e6edf7;
+    --muted: #9aa7c2;
+    --accent: #7cc4ff;
+    --border: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 10% -10%, #1b2a52 0%, transparent 60%),
+                radial-gradient(900px 500px at 110% 10%, #0b3a55 0%, transparent 60%),
+                var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { text-align: center; margin-bottom: 48px; }
+  h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header p { color: var(--muted); margin: 0; }
+  .card {
+    background: linear-gradient(180deg, var(--panel), var(--panel-2));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+  h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #052036;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn:hover { opacity: 0.9; text-decoration: none; }
+  ul { padding-left: 20px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Athlete MindBoost Support</h1>
+      <p>We're here to help you get the most out of the app.</p>
+    </header>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p>The fastest way to get help is to send us an email. We aim to reply within 2 business days.</p>
+      <a class="btn" href="mailto:braden.no10@yahoo.co.uk?subject=Athlete%20MindBoost%20Support">Email Support</a>
+      <p class="muted" style="margin-top:14px;">braden.no10@yahoo.co.uk</p>
+    </section>
+
+    <section class="card">
+      <h2>Common Topics</h2>
+      <ul>
+        <li>Account, sign-in, or password issues</li>
+        <li>Subscription, billing, or restore purchases</li>
+        <li>Reporting a bug or unexpected behaviour</li>
+        <li>Feature suggestions and feedback</li>
+        <li>Deleting your account or data</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Subscriptions</h2>
+      <p>Subscriptions are managed through your Apple ID. To cancel or change your plan, open the Settings app on your iPhone, tap your name at the top, then tap <strong>Subscriptions</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>Read our <a href="./index.html">Privacy Policy</a> to learn how we handle your data.</p>
+    </section>
+
+    <footer>
+      &copy; <span id="y"></span> Athlete MindBoost. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
